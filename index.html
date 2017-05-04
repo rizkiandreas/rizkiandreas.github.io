@@ -4,18 +4,6 @@
 	</head>
 	<body>
 		<div>Hello from KUDO World</div>
-		
-		<script>
-		    var client = mqtt.connect('ws://http://localhost:1883');
-
-		    client.subscribe('presence');
-		    client.publish('presence', 'Client 1 is alive.. Test Ping! ' + Date());
-		    console.log('halo');
-		    client.on("message", function (topic, message) {
-		        console.log(topic)
-		        console.log(message.toString())
-		        client.end()
-		    })
-		</script>
+		<script type='text/javascript' src="/script.js"></script>
 	</body>
 </html>
